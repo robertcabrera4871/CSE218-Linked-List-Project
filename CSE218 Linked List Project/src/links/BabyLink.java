@@ -8,7 +8,6 @@ public class BabyLink {
 		this.followingWord = nextWord;
 		this.next = null;
 	}
-
 	public String getFollowingWord() {
 		return followingWord;
 	}
@@ -26,7 +25,7 @@ public class BabyLink {
 	}
 
 	public void display() {
-		System.out.println("followingWord=" + followingWord);
+		System.out.print(" " + followingWord + ",");
 	}
 
 }

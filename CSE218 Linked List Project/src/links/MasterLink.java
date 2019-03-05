@@ -12,6 +12,9 @@ public class MasterLink {
 		this.setFollowingWords(new BabyList());
 		this.next = null;
 	}
+	public String getRandomBaby() {
+		return followingWords.getRandom().getFollowingWord();
+	}
 
 	public String getUniqueWord() {
 		return uniqueWord;
@@ -38,7 +41,7 @@ public class MasterLink {
 	}
 
 	public void display() {
-		System.out.println("uniqueWord: " + uniqueWord);
+		System.out.print("- (" + uniqueWord + ')');
 	}
 
 

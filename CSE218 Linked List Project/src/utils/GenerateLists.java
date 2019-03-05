@@ -46,8 +46,9 @@ public class GenerateLists {
 			String compare = scanUnique.next();
 			String next = scanFollowing.next();
 			if (isUnique(compare)) {
-				mL.insert(compare);
-				mL.getFirst().getFollowingWords().insert(next);
+				mL.insert(compare).getFollowingWords().insert(next);
+			} else {
+			mL.find(compare).getFollowingWords().insert(next);
 			}
 		}
 	}
